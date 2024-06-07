@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "allin1server";
+$password = "MySQL2day@PC";
 $db = "finance";
 
 try {
