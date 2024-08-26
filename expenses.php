@@ -7,7 +7,7 @@ include_once "auth.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Finance Manager</title>
+    <title>User Profile</title>
 
     <?php include_once "includes/head-content.php"; ?>
 

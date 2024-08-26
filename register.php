@@ -39,7 +39,7 @@ include_once "bootstrap.php";
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header">
-                        Login
+                        Register
                     </div>
                     <div class="card-body">
 
@@ -48,21 +48,49 @@ include_once "bootstrap.php";
                                 <div class="col">
                                     <div id="notifyLogin"></div>
                                     <form id="loginForm" action="<?php echo SITE_URL;?>endpoint/login.php" method="POST">
-                                        <div class="form-group">
-                                            <label for="email">Username</label>
+                                        <div class="row">
+                                            <div class="form-group col-lg-6">
+                                                <label for="firstName">First Name</label>
+                                                <input type="text" class="form-control" id="firstName" name="first_name">
+                                            </div>
+                                            <div class="form-group col-lg-6">
+                                                <label for="lastName">Last Name</label>
+                                                <input type="text" class="form-control" id="lastName" name="last_name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <label for="address">Address</label>
+                                            <input type="text" class="form-control" id="address" name="address">
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="form-group col-lg-6">
+                                                <label for="mobile">Mobile Number</label>
+                                                <input type="text" class="form-control" id="mobile" name="mobile">
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <label for="email">Email Address</label>
                                             <input type="text" class="form-control" id="email" name="email">
                                         </div>
                                         <div class="form-group mt-2">
-                                            <label for="password">Password</label>
-                                            <input type="password" class="form-control" id="password" name="password">
+                                            <label for="username">Username</label>
+                                            <input type="text" class="form-control" id="username" name="username">
                                         </div>
-                                        <div class="row mt-3 align-items-center">
-                                            <div class="col-lg-6">
-                                                New User? <a href="register.php">Register Now</a>
+                                        <div class="row mt-2">
+                                            <div class="form-group col-lg-6">
+                                                <label for="password">Password</label>
+                                                <input type="password" class="form-control" id="password" name="password">
                                             </div>
-                                            <div class="col-lg-6" style="text-align: right;">
-                                                <button type="submit" class="btn btn-dark px-4">Login</button>
+                                            <div class="form-group col-lg-6">
+                                                <label for="password">Confirm Password</label>
+                                                <input type="password" class="form-control" id="password" name="password">
                                             </div>
+                                        </div>
+                                        <div class="mt-4 text-center">
+                                            <button type="submit" class="btn btn-dark px-5">Register</button>
+                                        </div>
+                                        <div class="mt-4 text-center">
+                                            Already registered? <a href="./">Click here</a> here to login.
                                         </div>
                                     </form>
                                 </div>
