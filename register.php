@@ -47,7 +47,7 @@ include_once "bootstrap.php";
                             <div class="row">
                                 <div class="col">
                                     <div id="notifyLogin"></div>
-                                    <form id="loginForm" action="<?php echo SITE_URL;?>endpoint/login.php" method="POST">
+                                    <form id="loginForm" action="<?php echo SITE_URL;?>endpoint/register.php" method="POST">
                                         <div class="row">
                                             <div class="form-group col-lg-6">
                                                 <label for="firstName">First Name</label>
@@ -82,8 +82,8 @@ include_once "bootstrap.php";
                                                 <input type="password" class="form-control" id="password" name="password">
                                             </div>
                                             <div class="form-group col-lg-6">
-                                                <label for="password">Confirm Password</label>
-                                                <input type="password" class="form-control" id="password" name="password">
+                                                <label for="verifyPassword">Verify Password</label>
+                                                <input type="password" class="form-control" id="verifyPassword" name="verify_password">
                                             </div>
                                         </div>
                                         <div class="mt-4 text-center">
