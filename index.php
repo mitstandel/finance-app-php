@@ -31,7 +31,7 @@ include_once "bootstrap.php";
 </head>
 
 <body>
-
+    <?php include_once "notifications.php"; ?>
     <div class="main-panel mt-4 col-11">
         <div class="d-flex justify-content-center align-items-lg-center h-100">
 
@@ -49,8 +49,8 @@ include_once "bootstrap.php";
                                     <div id="notifyLogin"></div>
                                     <form id="loginForm" action="<?php echo SITE_URL;?>endpoint/login.php" method="POST">
                                         <div class="form-group">
-                                            <label for="email">Username</label>
-                                            <input type="text" class="form-control" id="email" name="email">
+                                            <label for="username">Username</label>
+                                            <input type="text" class="form-control" id="username" name="username">
                                         </div>
                                         <div class="form-group mt-2">
                                             <label for="password">Password</label>

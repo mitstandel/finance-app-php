@@ -31,7 +31,7 @@ include_once "bootstrap.php";
 </head>
 
 <body>
-
+    <?php include_once "includes/notifications.php"; ?>
     <div class="main-panel mt-4 col-11">
         <div class="d-flex justify-content-center align-items-lg-center h-100">
 

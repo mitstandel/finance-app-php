@@ -24,6 +24,19 @@ include_once "auth.php";
                 <h1 class="text-bold">Your Profile</h1>
             </div>
 
+            <?php
+                $stmt = $conn->prepare("
+                    SELECT u.*, l.username FROM `user` as u
+                    INNER JOIN `login` as l
+                        ON l.user_id = u.user_id
+                    where u.user_id = :user_id
+                ");
+                $stmt->execute([
+                    ':user_id' => $_SESSION['USERID'],
+                ]);
+                $userData = $stmt->fetch();
+            ?>
+
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
@@ -37,7 +50,7 @@ include_once "auth.php";
                                             First Name:
                                         </label>
                                         <div class="form-group col-lg-8">
-                                            John
+                                            <?php echo $userData['firstname']; ?>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -45,7 +58,7 @@ include_once "auth.php";
                                             Last Name:
                                         </label>
                                         <div class="form-group col-lg-8">
-                                            Doe
+                                            <?php echo $userData['lastname']; ?>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -53,7 +66,7 @@ include_once "auth.php";
                                             Address:
                                         </label>
                                         <div class="form-group col-lg-8">
-                                            202 Infinity Drive, Truganina VIC 3029, Australia
+                                            <?php echo $userData['address']; ?>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -61,7 +74,7 @@ include_once "auth.php";
                                             Mobile Number:
                                         </label>
                                         <div class="form-group col-lg-8">
-                                            05634534532
+                                            <?php echo $userData['mobile']; ?>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -69,7 +82,7 @@ include_once "auth.php";
                                             E-mail Address:
                                         </label>
                                         <div class="form-group col-lg-8">
-                                            graphic.vb@gmail.com
+                                            <?php echo $userData['email']; ?>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -77,7 +90,7 @@ include_once "auth.php";
                                             Username:
                                         </label>
                                         <div class="form-group col-lg-8">
-                                            johndoe
+                                            <?php echo $userData['username']; ?>
                                         </div>
                                     </div>
                                 </div>
