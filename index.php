@@ -31,12 +31,12 @@ include_once "bootstrap.php";
 </head>
 
 <body>
-    <?php include_once "notifications.php"; ?>
     <div class="main-panel mt-4 col-11">
-        <div class="d-flex justify-content-center align-items-lg-center h-100">
+        <div class="d-flex justify-content-center align-items-lg-center h-100 position-relative">
+            <?php include_once "includes/notifications.php"; ?>
 
             <!-- Login  -->
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card">
                     <div class="card-header">
                         Login
@@ -47,7 +47,7 @@ include_once "bootstrap.php";
                             <div class="row">
                                 <div class="col">
                                     <div id="notifyLogin"></div>
-                                    <form id="loginForm" action="<?php echo SITE_URL;?>endpoint/login.php" method="POST">
+                                    <form id="loginForm" action="<?php echo SITE_URL; ?>endpoint/login.php" method="POST">
                                         <div class="form-group">
                                             <label for="username">Username</label>
                                             <input type="text" class="form-control" id="username" name="username">
