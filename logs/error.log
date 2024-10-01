@@ -35,3 +35,21 @@ Stack trace:
 [27-Aug-2024 21:49:11 Asia/Kolkata] PHP Warning:  Undefined array key "firstname" in G:\xampp\htdocs\finance\endpoint\register.php on line 19
 [27-Aug-2024 21:49:11 Asia/Kolkata] PHP Warning:  Undefined array key "lastname" in G:\xampp\htdocs\finance\endpoint\register.php on line 20
 [27-Aug-2024 22:24:24 Asia/Kolkata] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fisrtname' in 'field list'
+[30-Sep-2024 11:39:03 Asia/Kolkata] PHP Warning:  include_once(notifications.php): Failed to open stream: No such file or directory in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:39:03 Asia/Kolkata] PHP Warning:  include_once(): Failed opening 'notifications.php' for inclusion (include_path='/var/www/html/finance/lib:.:/usr/share/php') in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:39:31 Asia/Kolkata] PHP Warning:  include_once(notifications.php): Failed to open stream: No such file or directory in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:39:31 Asia/Kolkata] PHP Warning:  include_once(): Failed opening 'notifications.php' for inclusion (include_path='/var/www/html/finance/lib:.:/usr/share/php') in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:40:29 Asia/Kolkata] PHP Warning:  include_once(notifications.php): Failed to open stream: No such file or directory in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:40:29 Asia/Kolkata] PHP Warning:  include_once(): Failed opening 'notifications.php' for inclusion (include_path='/var/www/html/finance/lib:.:/usr/share/php') in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:40:59 Asia/Kolkata] PHP Warning:  include_once(notifications.php): Failed to open stream: No such file or directory in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:40:59 Asia/Kolkata] PHP Warning:  include_once(): Failed opening 'notifications.php' for inclusion (include_path='/var/www/html/finance/lib:.:/usr/share/php') in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:41:01 Asia/Kolkata] PHP Warning:  include_once(notifications.php): Failed to open stream: No such file or directory in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:41:01 Asia/Kolkata] PHP Warning:  include_once(): Failed opening 'notifications.php' for inclusion (include_path='/var/www/html/finance/lib:.:/usr/share/php') in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:41:02 Asia/Kolkata] PHP Warning:  include_once(notifications.php): Failed to open stream: No such file or directory in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:41:02 Asia/Kolkata] PHP Warning:  include_once(): Failed opening 'notifications.php' for inclusion (include_path='/var/www/html/finance/lib:.:/usr/share/php') in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:41:02 Asia/Kolkata] PHP Warning:  include_once(notifications.php): Failed to open stream: No such file or directory in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:41:02 Asia/Kolkata] PHP Warning:  include_once(): Failed opening 'notifications.php' for inclusion (include_path='/var/www/html/finance/lib:.:/usr/share/php') in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:41:02 Asia/Kolkata] PHP Warning:  include_once(notifications.php): Failed to open stream: No such file or directory in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:41:02 Asia/Kolkata] PHP Warning:  include_once(): Failed opening 'notifications.php' for inclusion (include_path='/var/www/html/finance/lib:.:/usr/share/php') in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:41:57 Asia/Kolkata] PHP Warning:  include_once(notifications.php): Failed to open stream: No such file or directory in /var/www/html/finance/index.php on line 34
+[30-Sep-2024 11:41:57 Asia/Kolkata] PHP Warning:  include_once(): Failed opening 'notifications.php' for inclusion (include_path='/var/www/html/finance/lib:.:/usr/share/php') in /var/www/html/finance/index.php on line 34

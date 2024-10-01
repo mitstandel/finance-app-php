@@ -27,6 +27,7 @@ include_once "bootstrap.php";
             overflow-y: auto;
         }
     </style>
+    <link rel="stylesheet" href="<?php echo SITE_URL; ?>assets/css/captcha.css" />
 
 </head>
 
@@ -56,11 +57,15 @@ include_once "bootstrap.php";
                                             <label for="password">Password</label>
                                             <input type="password" class="form-control" id="password" name="password">
                                         </div>
-                                        <div class="row mt-3 align-items-center">
-                                            <div class="col-lg-6">
-                                                New User? <a href="register.php">Register Now</a>
+                                        <div class="form-group mt-2">
+                                            <label for="captcha">Captcha</label>
+                                            <div class="d-flex align-items-center">
+                                                <div id="image" class="inline" selectable="false"></div>
+                                                <input type="text" class="form-control" id="captcha" maxlength="4" name="captcha">
                                             </div>
-                                            <div class="col-lg-6" style="text-align: right;">
+                                        </div>
+                                        <div class="row mt-3 align-items-center">
+                                            <div class="col-lg-12" style="text-align: right;">
                                                 <button type="submit" class="btn btn-dark px-4">Login</button>
                                             </div>
                                         </div>
@@ -76,6 +81,7 @@ include_once "bootstrap.php";
     <?php include_once "includes/footer-scripts.php"; ?>
     <script src="assets/jquery-validate/jquery.validate.min.js"></script>
     <script src="assets/jquery-validate/additional-methods.min.js"></script>
+    <script src="assets/js/captcha.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
 
